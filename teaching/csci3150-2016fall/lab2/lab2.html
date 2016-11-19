@@ -554,13 +554,13 @@ pre.editor-colors .fold-marker:after,
 <h3 id="repeater-echo-">Repeater, <code>echo</code></h3>
 <p><code>echo</code> simply repeats the input. Here is an example,</p>
 <p><code>$ echo &quot;hello world&quot;</code></p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\echo.png" alt="hello world from `echo`"></p>
+<p><img src="figs\echo.png" alt="hello world from `echo`"></p>
 <p><a href="#top">(Back to top)</a></p>
 <p><a name="task"></a></p>
 <h3 id="task-manager-top-htop-">Task manager, <code>top</code> / <code>htop</code></h3>
 <p><code>top</code> is a built-in command line task manager which shows processes and resources utilization.</p>
 <p><code>$ top</code></p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\top.png" alt="`top`"></p>
+<p><img src="figs\top.png" alt="`top`"></p>
 <p>The first line shows the average system load in the last 1 minute, 5 minutes, and 15 minutes; the forth line reflects the utilization of physical memory.</p>
 <p>Below the fifth line, there is a table of processes with resources utilization shown. We take the fifth process as an example and name the information shown in the columns from left to right,</p>
 <ul>
@@ -585,7 +585,7 @@ pre.editor-colors .fold-marker:after,
 <p>(The <code>-y</code> option means automatically answer &quot;Yes&quot; for question asked)</p>
 <p>Try calling <code>htop</code> in a terminal,</p>
 <p><code>$ htop</code></p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\htop.png" alt="`htop`"></p>
+<p><img src="figs\htop.png" alt="`htop`"></p>
 <p>Same as <code>top</code>, it can be close by pressing <code>q</code>.</p>
 <p><a href="#top">(Back to top)</a></p>
 <p><a name="operations"></a></p>
@@ -600,18 +600,18 @@ pre.editor-colors .fold-marker:after,
 <p><code>cat</code>, <code>more</code>, <code>less</code>, <code>head</code>, and <code>tail</code> are commonly used commands for showing file content in a terminal, i.e., printing files&#39; content to the terminal.</p>
 <p><code>cat</code> concatenates files and prints all content to the terminal at once. For example, to print the content of a file named <code>hello.txt</code>,</p>
 <p><code>$ cat hello.txt</code></p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\cat.png" alt="`cat` example"></p>
+<p><img src="figs\cat.png" alt="`cat` example"></p>
 <p><code>more</code> and <code>less</code> are two other commands that do a similar job as <code>cat</code>. Instead of printing all content at once, <code>more</code> and <code>less</code> divide and print one screen at a time.</p>
 <p><code>head</code> prints a certain numbers of lines, 10 by default, from the beginning of a file. The number of printed lines can be controlled via the option <code>-n</code>, e.g. to print only the first 2 lines of <code>hello.txt</code>,</p>
 <p><code>$ head -n 2 hello.txt</code></p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\head.png" alt="`head` example"></p>
+<p><img src="figs\head.png" alt="`head` example"></p>
 <p><code>tail</code> is almost the same as <code>head</code>, except that it counts lines from the end of a file.</p>
 <p>You may refer to the online post <a href="https://2buntu.com/articles/1491/viewing-text-files-on-linux-cat-head-tail-more-and-less/">here</a> for more details and examples on these commands.</p>
 <p><a href="#top">(Back to top)</a></p>
 <p><a name="search"></a></p>
 <h3 id="searching-file-content-grep-">Searching file content, <code>grep</code></h3>
 <p><code>grep</code> searches files and prints the lines in which keywords are found, with keywords highlighted.</p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\grep.png" alt="`grep` example"></p>
+<p><img src="figs\grep.png" alt="`grep` example"></p>
 <p>To search a phrase with one or more words, embrace the phrase with double quotes (<code>&quot;&quot;</code>).</p>
 <p>Besides, <code>grep</code> supports regular expressions (regex) besides keywords in plaintext, and you may refer to <a href="https://www.gnu.org/software/findutils/manual/html_node/find_html/grep-regular-expression-syntax.html">this guide</a> for more details on the use of regex for <code>grep</code>. Beware that the syntax for regex may differ among commands, i.e., the one works for <code>grep</code> may or may not work for other commands.</p>
 <p><a href="#top">(Back to top)</a></p>
@@ -622,7 +622,7 @@ pre.editor-colors .fold-marker:after,
 <h3 id="ampersand-operator-">Ampersand Operator (<code>&amp;</code>)</h3>
 <p>Adding <code>&amp;</code> at the end of a command allows you to start a process in background, e.g. to start and run a task manager in background,</p>
 <p><code>$ htop &amp;</code></p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\ampersand.png" alt="`htop &amp;`"></p>
+<p><img src="figs\ampersand.png" alt="`htop &amp;`"></p>
 <p>The command returns the number of processes currently in background inside the square barracks (<code>[]</code>), followed by the id of the last process put into background.</p>
 <p>To bring the last &quot;background-ed&quot; process foreground, execute</p>
 <p><code>$ fg</code></p>
@@ -638,13 +638,13 @@ pre.editor-colors .fold-marker:after,
 <p>By default, <code>$ ls</code> shows the four files we created under the folder <code>test</code>. To show files except those ended with the extension <code>.txt</code>, we may use</p>
 <p><code>$ ls !(*.txt)</code></p>
 <p>Note that <code>*</code> represents any number of characters, and is known as one of the <em>wild characters</em> (see the <a href="http://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm">documentation</a> for more details).</p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\not.png" alt="example on `!`"></p>
+<p><img src="figs\not.png" alt="example on `!`"></p>
 <p><a href="#top">(Back to top)</a></p>
 <p><a name="pipe"></a></p>
 <h3 id="pipe-operator-">Pipe Operator (<code>|</code>)</h3>
 <p>By putting <code>|</code> between 2 commands, the output of the first command is <em>piped</em> to the second command as its input, e.g. to show the name of files with keyword <code>D</code> after listing the current directory,</p>
 <p><code>$ ls -1 | grep &quot;D&quot;</code></p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\pipe.png" alt="`ls -1 | grep &quot;D&quot;`"></p>
+<p><img src="figs\pipe.png" alt="`ls -1 | grep &quot;D&quot;`"></p>
 <p><em>pipe</em> ensures that data</p>
 <ul>
 <li>flows in one-way and,</li>
@@ -656,11 +656,11 @@ pre.editor-colors .fold-marker:after,
 <h3 id="output-redirect-operator-">Output Redirect Operator (<code>&gt;</code>)</h3>
 <p>Adding a <code>&gt;</code> to the end of a command, followed by a file name, redirects the <em>standard output stream (<code>stdout</code>)</em> (<a href="https://en.wikipedia.org/wiki/Standard_streams#Standard_output_.28stdout.29">What are standard streams</a>?) to a file, i.e. the output is written to the file instead of the terminal , e.g.</p>
 <p><code>$ ls &gt;ls.out</code></p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\redirect_ls.png" alt="redirect `ls` output"></p>
+<p><img src="figs\redirect_ls.png" alt="redirect `ls` output"></p>
 <p>The output of <code>ls</code> written to the file <code>ls.out</code> instead of the terminal. You may recap the output by executing <code>$ cat ls.out</code>.</p>
 <p>However, errors are usually output to the <em>standard error stream (<code>stderr</code>)</em> instead of <code>stdout</code>. To redirect <code>stderr</code>, we should specify its <em>file descriptor</em>, which is <code>2</code>, explicitly before <code>&gt;</code>, e.g.</p>
 <p><code>$ haha 2&gt;haha.err</code></p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\redirect_haha.png" alt="redirect `haha` output"></p>
+<p><img src="figs\redirect_haha.png" alt="redirect `haha` output"></p>
 <p>The error message is then written to the file <code>haha.err</code>, instead of the terminal.</p>
 <p><a href="#top">(Back to top)</a></p>
 <p><a name="semicolon"></a></p>
@@ -675,7 +675,7 @@ pre.editor-colors .fold-marker:after,
 <p>(1) <code>$ ls &amp;&amp; echo &quot;&gt;&gt; Success &lt;&lt;&quot;</code></p>
 <p>vs.</p>
 <p>(2) <code>$ haha &amp;&amp; echo &quot;&gt;&gt; Success &lt;&lt;&quot;</code></p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\and.png" alt="and operator"></p>
+<p><img src="figs\and.png" alt="and operator"></p>
 <p>Since <code>ls</code> is a valid command but <code>haha</code> is not, <code>echo &quot;&gt;&gt; Success &lt;&lt;&quot;</code> runs in (1), but not (2).</p>
 <p><a href="#top">(Back to top)</a></p>
 <p><a name="or"></a></p>
@@ -684,7 +684,7 @@ pre.editor-colors .fold-marker:after,
 <p>(1) <code>$ haha || echo &quot;&gt;&gt; Failed &lt;&lt;&quot;</code></p>
 <p>vs.</p>
 <p>(2) <code>$ ls || echo &quot;&gt;&gt; Failed &lt;&lt;&quot;</code></p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\or.png" alt="or operator"></p>
+<p><img src="figs\or.png" alt="or operator"></p>
 <p>Since <code>haha</code> is an invalid command but <code>ls</code> is a valid one, <code>echo &quot;&gt;&gt; Failed &lt;&lt;&quot;</code> runs in (1), but not (2).</p>
 <p><a href="#top">(Back to top)</a></p>
 <p><a name="combine"></a></p>
@@ -692,15 +692,15 @@ pre.editor-colors .fold-marker:after,
 <p><code>&amp;&amp;</code> and <code>||</code> complement each other. We may achieve similar (but not always the same) outcome as if using <code>if ... then ... else ...</code>.</p>
 <p>For example,</p>
 <p>(1) <code>$ haha &amp;&amp; echo &quot;&gt;&gt; Success &lt;&lt;&quot; || echo &quot;&gt;&gt; Failed &lt;&lt;&quot;</code></p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\combine_failed.png" alt="first command fails"></p>
+<p><img src="figs\combine_failed.png" alt="first command fails"></p>
 <p>Since <code>haha</code> is an invalid command, <code>echo &quot;&gt;&gt; Success &lt;&lt;&quot;</code> is skipped, but <code>echo &quot;&gt;&gt; Failed &lt;&lt;&quot;</code> runs.</p>
 <p>On the other hand, for</p>
 <p>(2) <code>$ ls &amp;&amp; echo &quot;&gt;&gt; Success &lt;&lt;&quot; || echo &quot;&gt;&gt; Failed &lt;&lt;&quot;</code></p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\combine_success.png" alt="first command succeeds"></p>
+<p><img src="figs\combine_success.png" alt="first command succeeds"></p>
 <p>since <code>ls</code> runs successfully, <code>echo &quot;&gt;&gt; Success &lt;&lt;&quot;</code> runs. <strong>Then, since <code>echo &quot;&gt;&gt; Success &lt;&lt;&quot;</code> also runs successfully, <code>echo &quot;&gt;&gt; Failed &lt;&lt;&quot;</code> is skipped.</strong></p>
 <p>[Pitfall] By reordering (1) a bit,</p>
 <p>(3) <code>$ haha  || echo &quot;&gt;&gt; Failed &lt;&lt;&quot; &amp;&amp; echo &quot;&gt;&gt; Success &lt;&lt;&quot;</code></p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\combine_reorder.png" alt="first command in question"></p>
+<p><img src="figs\combine_reorder.png" alt="first command in question"></p>
 <p>we see that <strong>both <code>&amp;&amp;</code> and <code>||</code> have the same precedence and are evaluated from left to right (see the guide <a href="http://tldp.org/LDP/abs/html/opprecedence.html">here</a>).</strong> Hence, <code>echo &quot;&gt;&gt; Failed &lt;&lt;&quot;</code> runs because <code>haha</code> fails, and <code>echo &quot;&gt;&gt; Success &lt;&lt;&quot;</code> runs because <code>echo &quot;&gt;&gt; Failed &lt;&lt;&quot;</code> succeeds.</p>
 <p><a href="#top">(Back to top)</a></p>
 <p><a name="group"></a></p>
@@ -710,7 +710,7 @@ pre.editor-colors .fold-marker:after,
 <p>Without <code>{}</code>,</p>
 <p><code>$ haha &amp;&amp; echo &quot;&gt;&gt; Success &lt;&lt;&quot;; echo &quot;XD&quot; || echo &quot;&gt;&gt; Failed &lt;&lt;&quot;</code></p>
 <p><code>haha &amp;&amp; echo &quot;&gt;&gt; Success &lt;&lt;&quot;</code> is treated as the first sequence of commands, while <code>echo &quot;XD&quot; || echo &quot;&gt;&gt; Failed &lt;&lt;&quot;</code> is another. Therefore, <code>echo &quot;&gt;&gt; Success &lt;&lt;&quot;</code> is skipped when <code>haha</code> fails, but <code>echo &quot;XD&quot;</code> runs.</p>
-<p><img src="C:\Users\Helen\Documents\GitHub\helenchw.github.io\teaching\csci3150-2016fall\lab2\figs\combine_diff.png" alt="grouping commands into a block"></p>
+<p><img src="figs\combine_diff.png" alt="grouping commands into a block"></p>
 <p><a href="#top">(Back to top)</a></p>
 <p><a name="compile"></a></p>
 <h2 id="basics-on-c-program-compilation">Basics on C program Compilation</h2>
