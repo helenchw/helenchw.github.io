@@ -1,33 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Helen H.W. Chan</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/mycss.css" rel="stylesheet">
+    </head>
+    <body>
+        <a id="top"></a>
+        <nav class="navbar navbar-reverse navbar-green">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="navbar"> 
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#home">Helen H.W. Chan</a>
+                </div>
+                <div id="menu" class="navbar-collapse collapse" style="height:1px;">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#research">Research</a><li>
+                        <li><a href="#teaching">Teaching Experience</a><li>
+                        <li><a href="#resource">Resources</a></li>
+                        <li><a href="#others">Others</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-Welcome to Helen's webpage :)
+        <div class="container">
+            <div id="home" class="well">
+                Helen is a current Ph.D. student under the supervision of <a href="http://www.cse.cuhk.edu.hk/~pclee" target="_blank">Prof. Patrick P.C. Lee</a> in the <a href="http://www.cse.cuhk.edu.hk" target="_blank">Department of Computer Science and Engineering</a>, <a href="http://www.cuhk.edu.hk" target="_blank">The Chinese University of Hong Kong</a>. She is also a member of the <a href="http://adslab.cse.cuhk.edu.hk" target="_blank">ADSLab</a>. She received her B.Eng. in Computer Engineering from the same department in 2013. Her research interests include reliability and efficiency of flash-based storage system.
+            </div>
+            <div id="research" class="panel panel-green">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Research</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <h4>Projects</h4>
+                        <ul>
+                            <li><a href="#">LSM-tree-based key-value store</a>: (Coming soon)</li>
+                            <li><a href="https://github.com/mtyiu/memec" target="_blank">MemEC</a>: Erasure-code in-memory key-value store which optimizes in performance for small key-value objects. She mainly involves in implementing the erasure coding component and performance evaluations of the prototype.
+                            <li><a href="http://adslab.cse.cuhk.edu.hk/software/eplog/" target="_blank">EPLog</a>: <u>E</u>lastic <u>P</u>arity <u>Log</u>ging scheme for improving endurance and performance of SSD arrays. She mainly involves in implementing and evaluating the prototype</li>
+                            <li><a href="http://adslab.cse.cuhk.edu.hk/software/codfs/" target="_blank">CodFS</a>: Parity logging with reserved space for mitigating update overheads in erasue-coded file system. She mainly involves in evaluation and field deployment of the file system in third-party clusters.</li>
+                        </ul>
+                    <h4>Publications</h4>
+                        <ol>
+                            <li>Matt M. T. Yiu, <u>Helen H. W. Chan</u>, and Patrick P. C. Lee. 2017. Erasure Coding for Small Objects in In-Memory KV Storage. In Proceedings of the 10th ACM International Systems and Storage Conference (SYSTOR).</li>
+                            <li>Yongkun Li, <u>Helen H. W. Chan</u>, Patrick P. C. Lee, and Yinlong Xu. 2016. Elastic Parity Logging for SSD RAID Arrays. In Proceedings of the 46th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN) (Regular paper). </li>
+                            <li>Jeremy C. W. Chan, Qian Ding, Patrick P. C. Lee, and <u>Helen H. W. Chan</u>. 2014. Parity logging with reserved space: towards efficient updates and recovery in erasure-coded clustered storage. In Proceedings of the 12th USENIX conference on File and Storage Technologies (FAST). </li>
+                        </ol>
+                    <a href="#top">[Top]</a>
+                </div>
+            </div>
 
-<h2>Teaching materials</h2>
+            <div id="teaching" class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Teaching Experience</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <h4>Teaching assistant</h4>
+                        <ul>
+                            <li>CSCI4430 (Data Communication and Computer Networks): Spring 2018 (unofficial), Spring 2016, Spring 2015</li>
+                            <li>CSCI4180 (Introduction to Cloud Computing): Fall 2017 (unofficial)</li>
+                            <li>CSCI 3150 (Introduction to Operating Systems): Fall 2016</li>
+                            <li>ESTR 3102 (Introduction to Operating Systems): Fall 2015, Fall 2014</li>
+                        </ul>
+                    <h4>Teaching awards</h4>
+                        <ul>
+                            <li>Best TA award (out of four recipients): 2014-15, 2015-16</li>
+                            <li>Certificate of Merit: 2017-18</li>
+                        </ul>
+                    </h4>
+                    <a href="#top">[Top]</a>
+                </div>
+            </div>
 
-<h3>ESTR 3102 Introduction to Operating Systems (2015 Fall)</h3> 
-  <ul>
-    <li><a href="teaching/estr3102-2015fall/tut-1-gentoo-net.pdf" target="_blank">Tutorial 1 -- Setup a Gentoo VM (Network)</a></li>
-    <li><a href="teaching/estr3102-2015fall/tut-1-gentoo-usb.pdf" target="_blank">Tutorial 1 -- Setup a Gentoo VM (USB)</a></li>
-    <li><a href="teaching/estr3102-2015fall/tut-2-add-syscall.pdf" target="_blank">Tutorial 2 -- Add a system call</a></li>
-    <li><a href="teaching/estr3102-2015fall/tut-3-redhat.pdf" target="_blank">Tutorial 3 -- Setup a Redhat VM</a></li>
-  </ul>
+            <div id="resource" class="panel panel-special">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Resources</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <h4>ESTR 3102 Introduction to Operating Systems (2015 Fall)</h4> 
+                        <ul>
+                          <li><a href="teaching/estr3102-2015fall/tut-1-gentoo-net.pdf" target="_blank">Tutorial 1 -- Setup a Gentoo VM (Online)</a></li>
+                          <li><a href="teaching/estr3102-2015fall/tut-1-gentoo-usb.pdf" target="_blank">Tutorial 1 -- Setup a Gentoo VM (Offline with USB)</a></li>
+                          <li><a href="teaching/estr3102-2015fall/tut-2-add-syscall.pdf" target="_blank">Tutorial 2 -- Add a system call</a></li>
+                          <li><a href="teaching/estr3102-2015fall/tut-3-redhat.pdf" target="_blank">Tutorial 3 -- Setup a Redhat VM</a></li>
+                        </ul>
+                    <h4>CSCI 3150 Introduction to Operating Systems (2016 Fall)</h4>
+                      <ul>
+                        <li><a href="teaching/csci3150-2016fall/lab1/lab1.html" target="_blank">Lab 1 -- Setup a Linux (Ubuntu) Environment</a></li>
+                        <li><a href="teaching/csci3150-2016fall/lab2/lab2.html" target="_blank">Lab 2 -- Basics on Bash Operators, and C program Compilation</a></li>
+                        <li><a href="teaching/csci3150-2016fall/lab3/lab3.html" target="_blank">Lab 3 -- Bash Script Writing</a></li>
+                      </ul>
+                    <a href="#top">[Top]</a>
+                </div>
+            </div>
 
-<h3>CSCI 3150 Introduction to Operating Systems (2016 Fall)</h3>
-  <ul>
-    <li><a href="teaching/csci3150-2016fall/lab1/lab1.html" target="_blank">Lab 1 -- Setup a Linux (Ubuntu) Environment</a></li>
-    <li><a href="teaching/csci3150-2016fall/lab2/lab2.html" target="_blank">Lab 2 -- Basics on Bash Operators, and C program Compilation</a></li>
-    <li><a href="teaching/csci3150-2016fall/lab3/lab3.html" target="_blank">Lab 3 -- Bash Script Writing</a></li>
-  </ul>
+            <div id="others" class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Others</strong></h3>
+                </div>
+                <div class="panel-body">
+                <!-- <p>Helen is currently a Lv. 15 HK Enlightened agent in <a href="https://www.ingress.com" target="_blank">Ingress</a>.</p> -->
+                    <a href="#top">[Top]</a>
+                </div>
+            </div>
 
+            <p class="text-right"><footnote>Last updated: 21 Jan, 2018</footnote></p>
+        </div>
 
-<h2>Research</h2>
+        <!--- scripts -->
+        <script>
+            window.jQuery || document.write('<script src="./js/jquery-3.2.1.min.js"><\/script>')
+        </script>
+        <script src="./js/bootstrap.min.js"></script>
 
-<h3>Projects</h3>
-  <ul>
-    <li><a href="http://ansrlab.cse.cuhk.edu.hk/software/eplog/" target="_blank">EPLog</a></li>
-    <li><a href="http://ansrlab.cse.cuhk.edu.hk/software/codfs/" target="_blank">CodFS</a></li>
-  </ul>
-
+    </body>
 
 </html>

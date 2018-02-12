@@ -1,0 +1,50 @@
+.navbar-green {
+    background-color: #008822;
+    border-radius:0;
+    border-color:#fff;
+}
+
+.navbar-green .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.navbar-green .navbar-nav > .active > a {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-green .navbar-nav > li > a:hover,
+.navbar-green .navbar-nav > li > a:focus,
+.navbar-green .navbar-nav > .active > a:hover,
+.navbar-green .navbar-nav > .active > a:focus,
+.navbar-green .navbar-nav > .open > a {
+    background-color: #33aa33;
+}
+
+.navbar-green .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-green .icon-bar {
+    background-color: #ffffff;
+}
+
+.panel-special > .panel-heading {
+    background-color: #8800aa;
+    color:#ffffff;
+    font: bold;
+}
+
+.panel-special {
+    border-color: #8800aa;
+}
+
+.panel-green > .panel-heading {
+    background-color: #008822;
+    color:#ffffff;
+    font: bold;
+}
+
+.panel-green {
+    border-color: #008822;
+}
