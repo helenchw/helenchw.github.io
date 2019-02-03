@@ -22,120 +22,158 @@
                 <div id="menu" class="navbar-collapse collapse" style="height:1px;">
                     <ul class="nav navbar-nav">
                         <li><a href="#research">Research</a><li>
-                        <li><a href="#teaching">Teaching Experience</a><li>
+                        <li><a class="text-primary" href="#teaching">Teaching Experience</a><li>
                         <li><a href="#resource">Resources</a></li>
-                        <li><a href="#others">Others</a></li>
+                        <!--<li><a href="#others">Others</a></li>-->
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <div class="container">
+        <div id="body" class="container">
             <div id="home" class="well">
-                Helen is a currently Ph.D. Candidate under the supervision of <a href="http://www.cse.cuhk.edu.hk/~pclee" target="_blank">Prof. Patrick P.C. Lee</a> in the <a href="http://www.cse.cuhk.edu.hk" target="_blank">Department of Computer Science and Engineering</a>, <a href="http://www.cuhk.edu.hk" target="_blank">The Chinese University of Hong Kong</a>. She is also a member of the <a href="http://adslab.cse.cuhk.edu.hk" target="_blank">ADSLab</a>. She received her B.Eng. in Computer Engineering from the same department in 2013. Her research interests include reliability and efficiency of flash-based storage system.
+                Helen is now an R&amp;D Engineer at <a href="http://www.inas.online/en/about-us.php" target="_blank">Unissoft Tech</a>, working on the projects related to cloud-based storage systems. Her main interest lies in building reliable and efficient storage solutions.
+                </br>
+                </br>
+                She completed her PhD study in 2018, under the supervision of <a href="http://www.cse.cuhk.edu.hk/~pclee" target="_blank">Prof. Patrick P.C. Lee</a> in the <a href="http://adslab.cse.cuhk.edu.hk" target="_blank">ADSLab</a> of the <a href="http://www.cse.cuhk.edu.hk" target="_blank">Department of Computer Science and Engineering</a>, <a href="http://www.cuhk.edu.hk" target="_blank">The Chinese University of Hong Kong</a>. She received her B.Eng. in Computer Engineering from the same department in 2013.
             </div>
             <div id="research" class="panel panel-green">
-                <div class="panel-heading">
+                <div id="reseach-header" class="panel-heading collapsed" data-toggle="collapse" data-target="#research-content" aria-expanded="true" aria-controls="research-content">
                     <h3 class="panel-title"><strong>Research</strong></h3>
                 </div>
-                <div class="panel-body">
-                    <h4>Projects</h4>
-                        <ul>
-                            <li><a href="http://adslab.cse.cuhk.edu.hk/software/hashkv">HashKV</a>: Leverging <u>Hash</u>ing in LSM-tree-based <u>K</u>ey-<u>V</u>alue store to enable efficient updates and GC atop key-value separation</li>
-                            <ul><li>Design, implementation and evaluation</li></ul>
-                            <li><a href="https://github.com/mtyiu/memec" target="_blank">MemEC</a>: In-<u>Mem</u>ory <u>E</u>rasure-<u>C</u>oded key-value store that optimizes in performance for small key-value objects
-                            <ul><li>Implementation of the erasure coding component and evaluation</li></ul>
-                            <li><a href="http://adslab.cse.cuhk.edu.hk/software/eplog" target="_blank">EPLog</a>: <u>E</u>lastic <u>P</u>arity <u>Log</u>ging scheme for improved endurance, reliability, and performance on SSD arrays under update-intensive workloads</li>
+                <div id="research-content" class="panel-body collapse in" data-labelledby="research-header" data-parent="#research">
+                    <ul class="nav nav-tabs" id="research-tabs" role="tablist">
+                        <li class="nav-item active">
+                            <a class="nav-link" id="research-projects-tab" data-toggle="tab" href="#research-projects" role="tab" aria-controls="research-projects" aria-selected="true" aria-expanded="true">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="research-pubs-tab" data-toggle="tab" href="#research-pubs" role="tab" aria-controls="research-pubs" aria-selected="false">Publications</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="research-content-tabs">
+                        <div class="tab-pane active in" id="research-projects" role="tabpanel" aria-labelledby="research-projects-tab">
+                            </br>
                             <ul>
-                                <li>Implementation and evaluation</li>
-                                <li>Design extensions and implementation of an example application (key-value store interface) running on EPLog</li>
+                                <li><a href="http://adslab.cse.cuhk.edu.hk/software/hashkv">HashKV</a>: <u>Hash</u>-based data grouping in LSM-tree-based <u>K</u>ey-<u>V</u>alue stores for efficient updates and GC atop key-value separation</li>
+                                <li><a href="https://github.com/mtyiu/memec" target="_blank">MemEC</a>: In-<u>Mem</u>ory <u>E</u>rasure-<u>C</u>oded key-value store for efficient storage and operations of small key-value objects
+                                <li><a href="http://adslab.cse.cuhk.edu.hk/software/eplog" target="_blank">EPLog</a>: <u>E</u>lastic <u>P</u>arity <u>Log</u>ging scheme for improved endurance, reliability, and performance on SSD arrays under update-intensive workloads</li>
+                                <li><a href="http://adslab.cse.cuhk.edu.hk/software/codfs" target="_blank">CodFS</a>: Parity logging with reserved space for mitigating update overheads in Erasure-<u>Cod</u>ed <u>F</u>ile <u>S</u>ystems</li>
                             </ul>
-                            <li><a href="http://adslab.cse.cuhk.edu.hk/software/codfs" target="_blank">CodFS</a>: Parity logging with reserved space for mitigating update overheads in Erasue-<u>Cod</u>ed <u>F</u>ile <u>S</u>ystem</li>
-                            <ul><li>Evaluation and field deployment of CodFS in third-party clusters</li></ul>
-                        </ul>
-                    <h4>Publications</h4>
-                        <ol>
-                            <li><u>Helen H. W. Chan</u>, Yongkun Li, Patrick P. C. Lee, and Yinlong Xu. 2018. HashKV: Enabling Efficient Updates in KV Storage via Hashing. In Proceedings of the 2018 USENIX Annual Technical Conference (USENIX ATC).</li>
-                            <li><u>Helen H. W. Chan</u>, Yongkun Li, Patrick P. C. Lee, and Yinlong Xu. 2018. Elastic Parity Logging for SSD RAID Arrays: Design, Analysis, and Implementation. Accepted for publication in IEEE Transactions on Parallel and Distributed Systems (TPDS). </li>
-                            <li>Matt M. T. Yiu, <u>Helen H. W. Chan</u>, and Patrick P. C. Lee. 2017. Erasure Coding for Small Objects in In-Memory KV Storage. In Proceedings of the 10th ACM International Systems and Storage Conference (SYSTOR).</li>
-                            <li>Yongkun Li, <u>Helen H. W. Chan</u>, Patrick P. C. Lee, and Yinlong Xu. 2016. Elastic Parity Logging for SSD RAID Arrays. In Proceedings of the 46th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN) (Regular paper). </li>
-                            <li>Jeremy C. W. Chan, Qian Ding, Patrick P. C. Lee, and <u>Helen H. W. Chan</u>. 2014. Parity logging with reserved space: towards efficient updates and recovery in erasure-coded clustered storage. In Proceedings of the 12th USENIX conference on File and Storage Technologies (FAST). </li>
-                        </ol>
+                        </div>
+                        <div class="tab-pane" id="research-pubs" role="tabpanel" aria-labelledby="research-pubs-tab">
+                            </br>
+                            <ol>
+                                <li><u>Helen H. W. Chan</u>, Yongkun Li, Patrick P. C. Lee, and Yinlong Xu. 2018. HashKV: Enabling Efficient Updates in KV Storage via Hashing. In Proceedings of the 2018 USENIX Annual Technical Conference (USENIX ATC).</li>
+                                <li><u>Helen H. W. Chan</u>, Yongkun Li, Patrick P. C. Lee, and Yinlong Xu. 2018. Elastic Parity Logging for SSD RAID Arrays: Design, Analysis, and Implementation. Accepted for publication in IEEE Transactions on Parallel and Distributed Systems (TPDS). </li>
+                                <li>Matt M. T. Yiu, <u>Helen H. W. Chan</u>, and Patrick P. C. Lee. 2017. Erasure Coding for Small Objects in In-Memory KV Storage. In Proceedings of the 10th ACM International Systems and Storage Conference (SYSTOR).</li>
+                                <li>Yongkun Li, <u>Helen H. W. Chan</u>, Patrick P. C. Lee, and Yinlong Xu. 2016. Elastic Parity Logging for SSD RAID Arrays. In Proceedings of the 46th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN) (Regular paper). </li>
+                                <li>Jeremy C. W. Chan, Qian Ding, Patrick P. C. Lee, and <u>Helen H. W. Chan</u>. 2014. Parity logging with reserved space: towards efficient updates and recovery in erasure-coded clustered storage. In Proceedings of the 12th USENIX conference on File and Storage Technologies (FAST). </li>
+                            </ol>
+                        </div>
+                    </div>
                     <a href="#top">[Top]</a>
                 </div>
             </div>
 
             <div id="teaching" class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><strong>Teaching Experience</strong></h3>
+                <div id="teaching-header" class="panel-heading collapsed" data-toggle="collapse" data-target="#teaching-content" aria-expanded="false" aria-controls="teaching-content">
+                    <h3 class="panel-title">
+                        <span><strong>Teaching Experience</strong></span>
+                    </h3>
                 </div>
-                <div class="panel-body">
-                    <h4>Teaching Assistant</h4>
-                        <ul>
-                            <li>CSCI 4430 (Data Communication and Computer Networks): Spring 2018 (unofficial), Spring 2016, Spring 2015</li>
-                                <ul>
-                                    <li>VM arrangement</li>
-                                    <li>Tutorial on implementing network translation table (NAT) using <code>libnetfilter_queue</code></li>
-                                </ul>
-                            <li>CSCI 4180 (Introduction to Cloud Computing): Fall 2017 (unofficial)</li>
-                                <ul>
-                                    <li>Tutorial on implementing Page-Rank algorithm on Hadoop</li>
-                                </ul>
-                            <li>CSCI 3150 (Introduction to Operating Systems): Fall 2016</li>
-                                <ul>
-                                    <li><a href="#resource-csci3150">Tutorial on Ubuntu VM setup</a></li>
-                                    <li><a href="#resource-csci3150">Tutorial on Bash scripts writing</a></li>
-                                </ul>
-                            <li>ESTR 3102 (Introduction to Operating Systems): Fall 2015, Fall 2014</li>
-                                <ul>
-                                    <li><a href="#resource-estr3102">Tutorial on VM (Gentoo and Redhat) setup</a></li>
-                                    <li><a href="#resource-estr3102">Tutorial on adding system calls in Linux kernel</a></li>
-                                </ul>
-                        </ul>
-                    <h4>Teaching Awards</h4>
-                        <ul>
-                            <li>Best TA award (out of four recipients): 2014-15, 2015-16</li>
-                            <li>Certificate of Merit: 2016-17</li>
-                        </ul>
-                    </h4>
-                    <a href="#top">[Top]</a>
+                <div id="teaching-content" class="panel-body collapse" aria-labelledby="teaching-header" data-parent="#teaching">
+                    <ul class="nav nav-tabs" id="teaching-tabs" role="tablist">
+                        <li class="nav-item active">
+                            <a class="nav-link" id="teaching-assist-tab" data-toggle="tab" href="#teaching-assist" role="tab" aria-controls="teaching-assist" aria-selected="true" aria-expanded="true">Teaching Assistant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="teaching-awards-tab" data-toggle="tab" href="#teaching-awards" role="tab" aria-controls="teaching-awards" aria-selected="false">Awards</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="teaching-content-tabs">
+                        <div class="tab-pane active in" id="teaching-assist" role="tabpanel" aria-labelledby="teaching-assist-tab">
+                            </br>
+                            <ul>
+                                <li>CSCI 4430 (Data Communication and Computer Networks): Spring 2018 (unofficial), Spring 2016, Spring 2015
+                                    <ul>
+                                        <li>VM arrangement</li>
+                                        <li>Tutorials on implementing network translation table (NAT) using <code>libnetfilter_queue</code></li>
+                                    </ul>
+                                </li>
+                                <li>CSCI 4180 (Introduction to Cloud Computing): Fall 2017 (unofficial)
+                                    <ul>
+                                        <li>Tutorial on implementing Page-Rank algorithm on Hadoop</li>
+                                    </ul>
+                                </li>
+                                <li>CSCI 3150 (Introduction to Operating Systems): Fall 2016
+                                    <ul>
+                                        <li>Tutorial on VM (Ubuntu) setup
+                                            <ul>
+                                                <li><a href="teaching/csci3150-2016fall/lab1/lab1.html" target="_blank">Lab 1 -- Setup a Linux (Ubuntu) Environment</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Tutorials on Bash scripts writing
+                                            <ul>
+                                                <li><a href="teaching/csci3150-2016fall/lab2/lab2.html" target="_blank">Lab 2 -- Basics on Bash Operators, and C program Compilation</a></li>
+                                                <li><a href="teaching/csci3150-2016fall/lab3/lab3.html" target="_blank">Lab 3 -- Bash Script Writing</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>ESTR 3102 (Introduction to Operating Systems): Fall 2015, Fall 2014
+                                    <ul>
+                                        <li>Tutorials on VM (Gentoo and Redhat) setup
+                                            <ul>
+                                                <li><a href="teaching/estr3102-2015fall/tut-1-gentoo-net.pdf" target="_blank">Tutorial 1 -- Setup a Gentoo VM (Online)</a></li>
+                                                <li><a href="teaching/estr3102-2015fall/tut-1-gentoo-usb.pdf" target="_blank">Tutorial 1 -- Setup a Gentoo VM (Offline with USB)</a></li>
+                                                <li><a href="teaching/estr3102-2015fall/tut-3-redhat.pdf" target="_blank">Tutorial 3 -- Setup a Redhat VM</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Tutorial on adding system calls in Linux kernel
+                                            <ul>
+                                                <li><a href="teaching/estr3102-2015fall/tut-2-add-syscall.pdf" target="_blank">Tutorial 2 -- Add a system call</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="teaching-awards" role="tabpanel" aria-labelledby="teaching-awards-tab">
+                            </br>
+                            <ul>
+                                <li>Best TA award (out of four recipients): 2014-15, 2015-16</li>
+                                <li>Certificate of Merit: 2016-17</li>
+                            </ul>
+                        </div>
+                        <a href="#top">[Top]</a>
+                    </div>
                 </div>
             </div>
 
             <div id="resource" class="panel panel-special">
-                <div class="panel-heading">
+                <div id="resource-header" class="panel-heading collapsed" data-toggle="collapse" data-target="#resource-content" aria-expanded="false" aria-controls="resource-content">
                     <h3 class="panel-title"><strong>Resources</strong></h3>
                 </div>
-                <div class="panel-body">
-                    <h4><a name="resource-estr3102"></a>ESTR 3102 Introduction to Operating Systems (2015 Fall)</h4> 
-                        <ul>
-                          <li><a href="teaching/estr3102-2015fall/tut-1-gentoo-net.pdf" target="_blank">Tutorial 1 -- Setup a Gentoo VM (Online)</a></li>
-                          <li><a href="teaching/estr3102-2015fall/tut-1-gentoo-usb.pdf" target="_blank">Tutorial 1 -- Setup a Gentoo VM (Offline with USB)</a></li>
-                          <li><a href="teaching/estr3102-2015fall/tut-2-add-syscall.pdf" target="_blank">Tutorial 2 -- Add a system call</a></li>
-                          <li><a href="teaching/estr3102-2015fall/tut-3-redhat.pdf" target="_blank">Tutorial 3 -- Setup a Redhat VM</a></li>
-                        </ul>
-                    <h4><a name="resource-csci3150"></a>CSCI 3150 Introduction to Operating Systems (2016 Fall)</h4>
-                      <ul>
-                        <li><a href="teaching/csci3150-2016fall/lab1/lab1.html" target="_blank">Lab 1 -- Setup a Linux (Ubuntu) Environment</a></li>
-                        <li><a href="teaching/csci3150-2016fall/lab2/lab2.html" target="_blank">Lab 2 -- Basics on Bash Operators, and C program Compilation</a></li>
-                        <li><a href="teaching/csci3150-2016fall/lab3/lab3.html" target="_blank">Lab 3 -- Bash Script Writing</a></li>
-                      </ul>
+                <div id="resource-content" class="panel-body collapse" aria-labelledby="resouce-header" data-parent="#resouce">
+                    <p> <a href="files/ycsb-overview.pdf" target="_blank">A quick introduction to YCSB (hands-on)</a> </p>
                     <a href="#top">[Top]</a>
                 </div>
             </div>
 
+            <!-- 
             <div id="others" class="panel panel-default">
-                <div class="panel-heading">
+                <div id="others-header" class="panel-heading collapsed" data-toggle="collapse" data-target="#others-content" aria-expanded="false" aria-controls="others-content">
                     <h3 class="panel-title"><strong>Others</strong></h3>
                 </div>
-                <div class="panel-body">
-                    <p> <a href="files/ycsb-overview.pdf">Quick introduction to YCSB (hands-on)</a> </p>
-                <!-- <p>Helen is currently a Lv. 15 HK Enlightened agent in <a href="https://www.ingress.com" target="_blank">Ingress</a>.</p> -->
+                <div id="others-content" class="panel-body collapse" aria-labelledby="others-header" data-parent="#others">
+                    <p>Helen is now a Lv. 16 HK Enlightened agent in <a href="https://www.ingress.com" target="_blank">Ingress</a>.</p>
                     <a href="#top">[Top]</a>
                 </div>
             </div>
-
-            <p class="text-right"><footnote>Last updated: 25 July, 2018</footnote></p>
+            -->
+            <p class="text-right"><footnote>Last updated: 3 February, 2019</footnote></p>
         </div>
 
         <!--- scripts -->
